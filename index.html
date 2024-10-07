@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FFEAF5",
+                        button: '#ED017F'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+
+<body>
+    <div class="wrapper d-flex relative">
+        <div class="menu py-3 z-[9999]">
+            <nav class="flex justify-around items-center">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <div class="menu-list ">
+                    <ul class="flex gap-5">
+                        <li>RETAIL</li>
+                        <li>SME</li>
+                        <li>CORPORATE</li>
+                        <li>ABOUT US</li>
+                        <li>COVID 19</li>
+                        <li>CAMPAIGN</li>
+                    </ul>
+                </div>
+                <div class="button-nav">
+                    <button class="bg-button px-3 py-2 rounded-lg text-white me-3">SEARCH</button>
+                    <button class="bg-button px-3 py-2 rounded-lg text-white">SERVICE</button>
+                </div>
+            </nav>
+        </div>
+        <div class="left-box w-1/2">
+            <div class="wrapper flex justify-center items-center h-[100vh] flex-col">
+                <div class="left-content bg-sky-500 w-[500px]">
+                    <div class="title mb-5">
+                        <h1 class="text-6xl font-bold">Chase Your Dream With Us</h1>
+                    </div>
+                    <div class="isi mb-5">
+                        <p class="text-3xl">The harder you work for something, the greater you’ll feel when you achieve it.</p>
+                    </div>
+                    <div class="btn-content">
+                        <button class="bg-button text-white py-3 px-2 rounded-lg">Apply Online</button>
+                        <button class="border border-2 border-button py-3 px-2 rounded-lg text-button">Loan
+                            Calculator</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-box w-1/2 bg-primary"></div>
+        </div>
+    </div>
+</body>
+
+</html>
