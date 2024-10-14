@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#FFEAF5",
-              button: "#ED017F",
-              secondary: "#FCE0EF33",
-              text: "#363940",
-            },
-            keyframes: {
-              wiggle: {
-                "0%, 100%": { transform: "rotate(-5deg)" },
-                "50%": { transform: "rotate(5deg)" },
-              },
-            },
-            animation: {
-              wiggle: "wiggle 1s ease-in-out infinite",
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#FFEAF5",
+            button: "#ED017F",
+            secondary: "#FCE0EF33",
+            text: "#363940",
+          },
+          keyframes: {
+            wiggle: {
+              "0%, 100%": { transform: "rotate(-5deg)" },
+              "50%": { transform: "rotate(5deg)" },
             },
           },
+          animation: {
+            wiggle: "wiggle 1s ease-in-out infinite",
+          },
         },
-      };
-    </script>
-    <style type="text/tailwindcss">
-      @layer utilities {
+      },
+    };
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
         .content-auto {
           content-visibility: auto;
         }
@@ -69,668 +70,545 @@
         }
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <div class="wrapper d-flex relative">
-      <!-- navbar -->
-      <div
-        class="menu py-3 bg-slate-300 shadow justify-around items-center md:flex-between md:bg-white md:static md:shadow-none"
-      >
-        <nav class="flex justify-around items-center">
-          <div class="logo">
-            <img src="assets/logo.png" alt="" />
-          </div>
-          <div class="menu-list hidden md:flex">
-            <ul class="flex gap-5">
-              <li>RETAIL</li>
-              <li>SME</li>
-              <li>CORPORATE</li>
-              <li class="z-40">ABOUT US</li>
-              <li class="z-40">COVID 19</li>
-              <li class="z-40">CAMPAIGN</li>
-            </ul>
-          </div>
-          <div class="button-nav hidden md:flex z-40">
-            <button class="bg-button px-3 py-2 rounded-lg text-white me-3">
-              SEARCH
-            </button>
-            <button class="bg-button px-3 py-2 rounded-lg text-white">
-              SERVICE
-            </button>
-          </div>
-          <!-- navbar hp -->
-          <!-- end of navbar hp -->
-        </nav>
-        <div
-          class="nav-bottom z-[9999] md:hidden fixed bottom-0 bg-button w-full h-[70px]"
-        >
-          <div class="container flex justify-center h-full items-center">
-            <ul class="flex gap-5 justify-center items-center">
-              <li
-                class="hover:text-white hover:scale-150 transition duration-300 text-white"
-              >
-                RETAIL
-              </li>
-              <li
-                class="hover:text-white hover:scale-150 transition duration-300 text-white"
-              >
-                SME
-              </li>
-              <li
-                class="hover:text-white hover:scale-150 transition duration-300 text-white"
-              >
-                CORPORATE
-              </li>
-              <li
-                class="z-40 hover:text-white hover:scale-150 transition duration-300 text-white"
-              >
-                ABOUT US
-              </li>
-              <li
-                class="z-40 hover:text-white hover:scale-150 transition duration-300 text-white"
-              >
-                COVID 19
-              </li>
-              <li
-                class="z-40 hover:text-white hover:scale-150 transition duration-300 text-white"
-              >
-                CAMPAIGN
-              </li>
-            </ul>
-          </div>
+<body>
+  <div class="wrapper d-flex relative">
+    <!-- navbar -->
+    <div
+      class="menu py-3 bg-slate-300 shadow justify-around items-center md:flex-between md:bg-white md:static md:shadow-none">
+      <nav class="flex justify-around items-center">
+        <div class="logo">
+          <img src="assets/logo.png" alt="" />
+        </div>
+        <div class="menu-list hidden md:flex">
+          <ul class="flex gap-5">
+            <li class="md:text-xl">RETAIL</li>
+            <li class="md:text-xl">SME</li>
+            <li class="md:text-xl">CORPORATE</li>
+            <li class="z-40 md:text-xl">ABOUT US</li>
+            <li class="z-40 md:text-xl">COVID 19</li>
+            <li class="z-40 md:text-xl">CAMPAIGN</li>
+          </ul>
+        </div>
+        <div class="button-nav hidden md:flex z-40">
+          <button class="md:text-xl bg-button px-3 py-2 rounded-lg text-white me-3">
+            SEARCH
+          </button>
+          <button class="md:text-xl bg-button px-3 py-2 rounded-lg text-white">
+            SERVICE
+          </button>
+        </div>
+        <!-- navbar hp -->
+        <!-- end of navbar hp -->
+      </nav>
+      <div class="nav-bottom z-[9999] md:hidden fixed bottom-0 bg-button w-full h-[70px]">
+        <div class="container flex justify-center h-full items-center">
+          <ul class="flex gap-5 justify-center items-center">
+            <li class="hover:text-white hover:scale-150 transition duration-300 text-white">
+              RETAIL
+            </li>
+            <li class="hover:text-white hover:scale-150 transition duration-300 text-white">
+              SME
+            </li>
+            <li class="hover:text-white hover:scale-150 transition duration-300 text-white">
+              CORPORATE
+            </li>
+            <li class="z-40 hover:text-white hover:scale-150 transition duration-300 text-white">
+              ABOUT US
+            </li>
+            <li class="z-40 hover:text-white hover:scale-150 transition duration-300 text-white">
+              COVID 19
+            </li>
+            <li class="z-40 hover:text-white hover:scale-150 transition duration-300 text-white">
+              CAMPAIGN
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- end of navbar -->
+    </div>
+    <!-- end of navbar -->
 
-      <!-- box of content -->
-      <div class="box-content flex flex-wrap">
-        <!-- left content -->
-        <div class="left-box mt-5 md:w-1/2">
-          <div
-            class="wrapper p-5 md:flex md:justify-center md:items-center md:h-[100vh] flex-col"
-          >
-            <div class="left-content w-[500px]">
-              <div
-                class="title mb-5"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <h1
-                  class="text-5xl w-[400px] z-20 md:w-full md:text-6xl font-bold"
-                >
-                  Chase Your Dream With Us
-                </h1>
+    <!-- box of content -->
+    <div class="box-content flex flex-wrap">
+      <!-- left content -->
+      <div class="left-box md:w-1/2">
+        <div class="wrapper p-5 md:flex md:justify-center md:items-center md:h-[100vh] flex-col">
+          <div class="left-content w-[500px]">
+            <div class="title mb-5" data-aos="fade-up" data-aos-duration="2000">
+              <h1 class="text-5xl md:text-7xl w-[400px] z-20 md:w-[600px] md:text-6xl font-bold">
+                Chase Your Dream With Us
+              </h1>
+            </div>
+            <div class="isi mb-5" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+              <p class="w-[400px] md:w-full text-xl md:text-3xl">
+                The harder you work for something, the greater you’ll feel
+                when you achieve it.
+              </p>
+            </div>
+            <div class="btn-content">
+              <button class="bg-button px-5 py-2 text-white md:py-4 md:px-6 rounded-lg me-2 text-xl md:text-2xl"
+                data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
+                data-aos-easing="ease-in-sine">
+                Apply Online
+              </button>
+              <button
+                class="border border-2 px-5 py-2 border-button md:py-4 md:px-6 rounded-lg text-button text-xl md:text-2xl"
+                data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
+                data-aos-easing="ease-in-sine">
+                Loan Calculator
+              </button>
+            </div>
+            <div class="sosmed-content flex items-center mt-7 md:mt-[100px]">
+              <div class="call-items flex justify-center gap-3 items-center border-r-2 border-slate-500 w-25 px-4">
+                <img src="./assets/call.png" alt="call icon" class="animate-bounce" />
+                <p class="md:text-xl">16519</p>
               </div>
-              <div
-                class="isi mb-5"
-                data-aos="fade-right"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-sine"
-              >
-                <p class="w-[400px] md:w-full text-xl md:text-3xl">
-                  The harder you work for something, the greater you’ll feel
-                  when you achieve it.
-                </p>
-              </div>
-              <div class="btn-content">
-                <button
-                  class="bg-button px-5 py-2 text-white md:py-3 md:px-2 rounded-lg me-2 text-xl"
-                  data-aos="fade-up"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="2000"
-                  data-aos-easing="ease-in-sine"
-                >
-                  Apply Online
-                </button>
-                <button
-                  class="border border-2 px-5 py-2 border-button md:py-3 md:px-2 rounded-lg text-button text-xl"
-                  data-aos="fade-up"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="2000"
-                  data-aos-easing="ease-in-sine"
-                >
-                  Loan Calculator
-                </button>
-              </div>
-              <div class="sosmed-content flex items-center mt-7 md:mt-[100px]">
-                <div
-                  class="call-items flex justify-center gap-3 items-center border-r-2 border-slate-500 w-25 px-4"
-                >
-                  <img
-                    src="./assets/call.png"
-                    alt="call icon"
-                    class="animate-bounce"
-                  />
-                  <p>16519</p>
+              <div class="list-icon flex justify-center items-center gap-5 px-4">
+                <div class="fb">
+                  <img src="./assets/facebook.png" alt="facebook" class="animate-bounce" />
                 </div>
-                <div
-                  class="list-icon flex justify-center items-center gap-5 px-4"
-                >
-                  <div class="fb">
-                    <img
-                      src="./assets/facebook.png"
-                      alt="facebook"
-                      class="animate-bounce"
-                    />
-                  </div>
-                  <div class="yt w-[30px]">
-                    <img
-                      src="./assets/youtube.png"
-                      alt="facebook"
-                      class="animate-bounce"
-                    />
-                  </div>
-                  <div class="linkedin">
-                    <img
-                      src="./assets/linkedin.png"
-                      alt="facebook"
-                      class="animate-bounce"
-                    />
-                  </div>
-                  <div class="ig">
-                    <img
-                      src="./assets/instagram.png"
-                      alt="facebook"
-                      class="animate-bounce"
-                    />
-                  </div>
+                <div class="yt w-[30px]">
+                  <img src="./assets/youtube.png" alt="facebook" class="animate-bounce" />
+                </div>
+                <div class="linkedin">
+                  <img src="./assets/linkedin.png" alt="facebook" class="animate-bounce" />
+                </div>
+                <div class="ig">
+                  <img src="./assets/instagram.png" alt="facebook" class="animate-bounce" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- end of left content -->
+      </div>
+      <!-- end of left content -->
 
-        <!-- right content -->
-        <div class="right-box md:w-1/2 md:relative md:-top-[90px]">
-          <div
-            class="home animate-wiggle absolute bg-white left-10 w-[150px] h-[60px] md:top-[100px] rounded-full flex justify-center items-center gap-3 shadow-lg md:-ms-[120px]"
-          >
-            <img src="./assets/car.png" alt="" />
-            <p class="font-bold">Car Loans</p>
-          </div>
-          <div
-            class="home animate-wiggle absolute bg-white w-[150px] h-[60px] top-[520px] md:top-[210px] right-20 rounded-full flex justify-center items-center gap-3 shadow-lg"
-          >
-            <img src="./assets/home.png" alt="" />
-            <p class="font-bold">Home Loans</p>
-          </div>
+      <!-- right content -->
+      <div class="right-box md:w-1/2 md:relative md:-top-[90px]">
+        <div
+          class="home animate-wiggle absolute bg-white left-10 w-[150px] h-[60px] md:h- md:top-[100px] rounded-full flex justify-center items-center gap-3 shadow-lg md:-ms-[120px]">
+          <img src="./assets/car.png" alt="" />
+          <p class="font-bold md:text-xl">Car Loans</p>
+        </div>
+        <div
+          class="home animate-wiggle absolute bg-white w-[150px] h-[60px] top-[520px] md:top-[210px] md:w-[180px] right-20 rounded-full flex justify-center items-center gap-3 shadow-lg">
+          <img src="./assets/home.png" alt="" />
+          <p class="font-bold md:text-xl">Home Loans</p>
+        </div>
 
-          <div class="box-bg bg-primary md:w-full md:h-[550px]"></div>
-          <div
-            class="img-bg -ms-20 md:absolute md:top-[80px] md:-ms-[150px]"
-            data-aos="fade-left"
-            data-aos-duration="2000"
-          >
-            <img src="./assets/bg.png" alt="background" />
+        <div class="box-bg bg-primary md:w-full md:h-[750px]"></div>
+        <div class="img-bg -ms-20 md:absolute md:top-[80px] md:-ms-[150px]" data-aos="fade-left"
+          data-aos-duration="2000">
+          <img src="./assets/bg.png" alt="background" />
+        </div>
+      </div>
+      <!-- end of right content -->
+    </div>
+    <!-- end of box content -->
+
+    <!-- content 2 -->
+    <div class="warpper">
+      <div class="box-wrapper p-5">
+        <div class="heading flex flex-col justify-center items-center">
+          <h1 class="text-4xl md:text-6xl mb-5 text-center">
+            Creating Extraordinary Customer Experience
+          </h1>
+          <p class="text-xl text-center">
+            Our mission is to provide the best customer experience in the
+            industry.
+          </p>
+        </div>
+        <div
+          class="item-content md:grid md:grid-cols-4  md:justify-center gap-5 mt-10 flex flex-wrap justify-center items-center px-10">
+          <div class="item-1 mb-5 md:w-[259px]" data-aos="fade-down-right" data-aos-duration="2000">
+            <div class="logo mb-5">
+              <img src="./assets/Circle Layer.png" alt="" />
+            </div>
+            <div class="title mb-5">
+              <p class="text-2xl md:text-lg lg:text-2xl font-bold">
+                Integrity
+              </p>
+            </div>
+            <div class="content text-xl md:text-base">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ex illum perferendis quam, dicta incidunt deserunt id
+                quia inventore nobis tempore tempora, doloribus dolores totam.
+              </p>
+            </div>
+          </div>
+          <div class="item-1 mb-5 md:w-[259px]" data-aos="fade-down-right" data-aos-duration="2000">
+            <div class="logo mb-5">
+              <img src="./assets/Scenery.png" alt="" />
+            </div>
+            <div class="title mb-5">
+              <p class="text-2xl md:text-lg lg:text-2xl font-bold">
+                Demonstrate
+              </p>
+            </div>
+            <div class="content text-xl md:text-base">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ex illum perferendis quam, dicta incidunt deserunt id
+                quia inventore nobis tempore tempora, doloribus dolores totam.
+              </p>
+            </div>
+          </div>
+          <div class="item-1 mb-5 md:w-[259px]" data-aos="fade-down-left" data-aos-duration="2000">
+            <div class="logo mb-5">
+              <img src="./assets/Object Ungroup.png" alt="" />
+            </div>
+            <div class="title mb-5">
+              <p class="text-2xl md:text-lg lg:text-2xl font-bold">
+                Diversity
+              </p>
+            </div>
+            <div class="content text-xl md:text-base">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ex illum perferendis quam, dicta incidunt deserunt id
+                quia inventore nobis tempore tempora, doloribus dolores totam.
+              </p>
+            </div>
+          </div>
+          <div class="item-1 mb-5 md:w-[259px]" data-aos="fade-down-left" data-aos-duration="2000">
+            <div class="logo mb-5">
+              <img src="./assets/User Arrows.png" alt="" />
+            </div>
+            <div class="title mb-5">
+              <p class="text-2xl md:text-lg lg:text-2xl font-bold">
+                Team Work
+              </p>
+            </div>
+            <div class="content text-xl md:text-base">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ex illum perferendis quam, dicta incidunt deserunt id
+                quia inventore nobis tempore tempora, doloribus dolores totam.
+              </p>
+            </div>
+          </div>
+          <div class="item-1 md:w-[259px]" data-aos="fade-up-right" data-aos-duration="2000">
+            <div class="logo mb-5">
+              <img src="./assets/Circle Layer.png" alt="" />
+            </div>
+            <div class="title mb-5">
+              <p class="text-2xl md:text-lg lg:text-2xl font-bold">
+                Collaboration
+              </p>
+            </div>
+            <div class="content text-xl md:text-base">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ex illum perferendis quam, dicta incidunt deserunt id
+                quia inventore nobis tempore tempora, doloribus dolores totam.
+              </p>
+            </div>
+          </div>
+          <div class="item-1 md:w-[259px]" data-aos="fade-up-right" data-aos-duration="2000">
+            <div class="logo mb-5">
+              <img src="./assets/Rocket.png" alt="" />
+            </div>
+            <div class="title mb-5">
+              <p class="text-2xl md:text-lg lg:text-2xl font-bold">
+                Technology
+              </p>
+            </div>
+            <div class="content text-xl md:text-base">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ex illum perferendis quam, dicta incidunt deserunt id
+                quia inventore nobis tempore tempora, doloribus dolores totam.
+              </p>
+            </div>
+          </div>
+          <div class="item-1 md:w-[259px]" data-aos="fade-up-left" data-aos-duration="2000">
+            <div class="logo mb-5">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+            <div class="title mb-5">
+              <p class="text-2xl md:text-lg lg:text-2xl font-bold">
+                Corporate
+              </p>
+            </div>
+            <div class="content text-xl md:text-base">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ex illum perferendis quam, dicta incidunt deserunt id
+                quia inventore nobis tempore tempora, doloribus dolores totam.
+              </p>
+            </div>
+          </div>
+          <div class="item-1 md:w-[259px]" data-aos="fade-up-left" data-aos-duration="2000">
+            <div class="logo mb-5">
+              <img src="./assets/Cube.png" alt="" />
+            </div>
+            <div class="title mb-5">
+              <p class="text-2xl md:text-lg lg:text-2xl font-bold">Digital</p>
+            </div>
+            <div class="content text-xl md:text-base">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ex illum perferendis quam, dicta incidunt deserunt id
+                quia inventore nobis tempore tempora, doloribus dolores totam.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- end of right content -->
       </div>
-      <!-- end of box content -->
+    </div>
+    <!-- end of content-2 -->
 
-      <!-- content 2 -->
-      <div class="warpper">
-        <div class="box-wrapper p-5">
-          <div class="heading flex flex-col justify-center items-center">
-            <h1 class="text-4xl md:text-6xl mb-5 text-center">
-              Creating Extraordinary Customer Experience
-            </h1>
-            <p class="text-xl text-center">
-              Our mission is to provide the best customer experience in the
-              industry.
+    <!-- content 3 -->
+    <div class="wrapper bg-secondary">
+      <div class="container mx-auto p-4 pt-6">
+        <div class="header flex justify-center items-center">
+          <h1 class="text-4xl md:text-2xl">Business Partner</h1>
+        </div>
+        <div class="item-partner flex justify-around items-center py-10 md:mt-10 flex-wrap">
+          <div class="partner-1" data-aos="fade-right" data-aos-duration="1000">
+            <img src="./assets/image 3.png" alt="" />
+          </div>
+          <div class="partner-1" data-aos="fade-right" data-aos-duration="2000">
+            <img src="./assets/image 4.png" alt="" />
+          </div>
+          <div class="partner-1" data-aos="fade-left" data-aos-duration="2000">
+            <img src="./assets/image 5.png" alt="" />
+          </div>
+          <div class="partner-1" data-aos="fade-left" data-aos-duration="1000">
+            <img src="./assets/image 6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of content 3 -->
+
+    <!-- content 4 -->
+    <div class="wrapper">
+      <div class="box-wrapper flex flex-wrap">
+        <div class="content-left md:w-1/2">
+          <div class="img">
+            <img src="./assets/Picture.png" alt="" />
+          </div>
+        </div>
+        <div class="content-right md:w-1/2  flex justify-center items-center">
+          <div class="content-body md:h-full md:w-[460px] flex justify-center flex-col">
+            <div class="title mt-5 mx-auto mb-5">
+              <h1 class="text-4xl md:text-6xl md:w-[700px] ">IPDC AT A GLANCE</h1>
+            </div>
+            <div class="body md:text-base leading-relaxed mb-5 md:mb-10 px-3">
+              <p class="text-xl md:text-md">
+                IPDC Finance Limited (previously known as "Industrial
+                Promotion and Development Company of Bangladesh Limited") is
+                the first private sector financial institution of the country
+                established in 1981 by a distinguished group of shareholders
+                namely International Finance Corporation (IFC), USA, German
+                Investment and Development Company (DEG), Germany, The Aga
+                Khan Fund for Economic Development (AKFED), Switzerland,
+                Commonwealth Development Corporation (CDC), UK and the
+                Government of Bangladesh
+              </p>
+            </div>
+            <div class="arrow flex px-3 pb-2">
+              <p class="text-button text-2xl md:text-2xl">Read More</p>
+              <img src="./assets/right arrow.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of content 4 -->
+
+    <!-- content 5 -->
+    <div class="wrapper bg-secondary">
+      <div class="box-wrapper p-20">
+        <div class="header flex flex-col justify-center items-center">
+          <div class="title">
+            <h1 class="text-4xl md:text-4xl font-bold">Our Services</h1>
+          </div>
+          <div class="sub-title">
+            <p class="text-2xl text-center md:text-base text-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore quibusdam obcaecati debitis impedit, incidunt
+              cupiditate.
             </p>
           </div>
-          <div
-            class="item-content gap-5 mt-10 flex flex-wrap justify-center items-center px-10"
-          >
-            <div
-              class="item-1 mb-5 md:w-[259px]"
-              data-aos="fade-down-right"
-              data-aos-duration="2000"
-            >
-              <div class="logo mb-5">
-                <img src="./assets/Circle Layer.png" alt="" />
-              </div>
-              <div class="title mb-5">
-                <p class="text-2xl md:text-lg lg:text-2xl font-bold">
-                  Integrity
-                </p>
-              </div>
-              <div class="content text-xl md:text-base">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Saepe ex illum perferendis quam, dicta incidunt deserunt id
-                  quia inventore nobis tempore tempora, doloribus dolores totam.
-                </p>
-              </div>
-            </div>
-            <div
-              class="item-1 mb-5 md:w-[259px]"
-              data-aos="fade-down-right"
-              data-aos-duration="2000"
-            >
-              <div class="logo mb-5">
-                <img src="./assets/Scenery.png" alt="" />
-              </div>
-              <div class="title mb-5">
-                <p class="text-2xl md:text-lg lg:text-2xl font-bold">
-                  Demonstrate
-                </p>
-              </div>
-              <div class="content text-xl md:text-base">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Saepe ex illum perferendis quam, dicta incidunt deserunt id
-                  quia inventore nobis tempore tempora, doloribus dolores totam.
-                </p>
-              </div>
-            </div>
-            <div
-              class="item-1 mb-5 md:w-[259px]"
-              data-aos="fade-down-left"
-              data-aos-duration="2000"
-            >
-              <div class="logo mb-5">
-                <img src="./assets/Object Ungroup.png" alt="" />
-              </div>
-              <div class="title mb-5">
-                <p class="text-2xl md:text-lg lg:text-2xl font-bold">
-                  Diversity
-                </p>
-              </div>
-              <div class="content text-xl md:text-base">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Saepe ex illum perferendis quam, dicta incidunt deserunt id
-                  quia inventore nobis tempore tempora, doloribus dolores totam.
-                </p>
-              </div>
-            </div>
-            <div
-              class="item-1 mb-5 md:w-[259px]"
-              data-aos="fade-down-left"
-              data-aos-duration="2000"
-            >
-              <div class="logo mb-5">
-                <img src="./assets/User Arrows.png" alt="" />
-              </div>
-              <div class="title mb-5">
-                <p class="text-2xl md:text-lg lg:text-2xl font-bold">
-                  Team Work
-                </p>
-              </div>
-              <div class="content text-xl md:text-base">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Saepe ex illum perferendis quam, dicta incidunt deserunt id
-                  quia inventore nobis tempore tempora, doloribus dolores totam.
-                </p>
-              </div>
-            </div>
-            <div
-              class="item-1 md:w-[259px]"
-              data-aos="fade-up-right"
-              data-aos-duration="2000"
-            >
-              <div class="logo mb-5">
-                <img src="./assets/Circle Layer.png" alt="" />
-              </div>
-              <div class="title mb-5">
-                <p class="text-2xl md:text-lg lg:text-2xl font-bold">
-                  Collaboration
-                </p>
-              </div>
-              <div class="content text-xl md:text-base">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Saepe ex illum perferendis quam, dicta incidunt deserunt id
-                  quia inventore nobis tempore tempora, doloribus dolores totam.
-                </p>
-              </div>
-            </div>
-            <div
-              class="item-1 md:w-[259px]"
-              data-aos="fade-up-right"
-              data-aos-duration="2000"
-            >
-              <div class="logo mb-5">
-                <img src="./assets/Rocket.png" alt="" />
-              </div>
-              <div class="title mb-5">
-                <p class="text-2xl md:text-lg lg:text-2xl font-bold">
-                  Technology
-                </p>
-              </div>
-              <div class="content text-xl md:text-base">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Saepe ex illum perferendis quam, dicta incidunt deserunt id
-                  quia inventore nobis tempore tempora, doloribus dolores totam.
-                </p>
-              </div>
-            </div>
-            <div
-              class="item-1 md:w-[259px]"
-              data-aos="fade-up-left"
-              data-aos-duration="2000"
-            >
-              <div class="logo mb-5">
-                <img src="./assets/Bag.png" alt="" />
-              </div>
-              <div class="title mb-5">
-                <p class="text-2xl md:text-lg lg:text-2xl font-bold">
-                  Corporate
-                </p>
-              </div>
-              <div class="content text-xl md:text-base">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Saepe ex illum perferendis quam, dicta incidunt deserunt id
-                  quia inventore nobis tempore tempora, doloribus dolores totam.
-                </p>
-              </div>
-            </div>
-            <div
-              class="item-1 md:w-[259px]"
-              data-aos="fade-up-left"
-              data-aos-duration="2000"
-            >
-              <div class="logo mb-5">
-                <img src="./assets/Cube.png" alt="" />
-              </div>
-              <div class="title mb-5">
-                <p class="text-2xl md:text-lg lg:text-2xl font-bold">Digital</p>
-              </div>
-              <div class="content text-xl md:text-base">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Saepe ex illum perferendis quam, dicta incidunt deserunt id
-                  quia inventore nobis tempore tempora, doloribus dolores totam.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- end of content-2 -->
-
-      <!-- content 3 -->
-      <div class="wrapper bg-secondary">
-        <div class="container mx-auto p-4 pt-6">
-          <div class="header flex justify-center items-center">
-            <h1 class="text-4xl md:text-2xl">Business Partner</h1>
-          </div>
-          <div
-            class="item-partner flex justify-around items-center py-10 md:mt-10 flex-wrap"
-          >
-            <div
-              class="partner-1"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <img src="./assets/image 3.png" alt="" />
-            </div>
-            <div
-              class="partner-1"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-            >
-              <img src="./assets/image 4.png" alt="" />
-            </div>
-            <div
-              class="partner-1"
-              data-aos="fade-left"
-              data-aos-duration="2000"
-            >
-              <img src="./assets/image 5.png" alt="" />
-            </div>
-            <div
-              class="partner-1"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            >
-              <img src="./assets/image 6.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end of content 3 -->
-
-      <!-- content 4 -->
-      <div class="wrapper">
-        <div class="box-wrapper flex flex-wrap">
-          <div class="content-left md:w-1/2">
-            <div class="img">
-              <img src="./assets/Picture.png" alt="" />
-            </div>
-          </div>
-          <div class="content-right md:w-1/2 flex justify-center items-center">
-            <div
-              class="content-body md:h-full md:w-[460px] flex justify-center flex-col"
-            >
-              <div class="title mt-5 mx-auto mb-5">
-                <h1 class="text-4xl md:text-[32px]">IPDC AT A GLANCE</h1>
+        <div class="body grid grid-cols-2 gap-5 mt-10 md:grid md:grid-cols-4 justify-center">
+          <div class="img1">
+            <img src="./assets/Image.png" alt="" />
+            <div class="sub flex justify-between items-center mt-5">
+              <p class="text-2xl text-text w-36">IPDC Deposit schemes</p>
+              <div class="icon">
+                <img src="./assets/right arrow.png" alt="" />
               </div>
-              <div class="body md:text-base leading-relaxed mb-5 md:mb-10 px-3">
-                <p class="text-xl md:text-base">
-                  IPDC Finance Limited (previously known as "Industrial
-                  Promotion and Development Company of Bangladesh Limited") is
-                  the first private sector financial institution of the country
-                  established in 1981 by a distinguished group of shareholders
-                  namely International Finance Corporation (IFC), USA, German
-                  Investment and Development Company (DEG), Germany, The Aga
-                  Khan Fund for Economic Development (AKFED), Switzerland,
-                  Commonwealth Development Corporation (CDC), UK and the
-                  Government of Bangladesh
-                </p>
+            </div>
+          </div>
+          <div class="img1">
+            <img src="./assets/Image (1).png" alt="" />
+            <div class="sub flex justify-between items-center mt-5">
+              <p class="text-2xl text-text w-40">IPDC Personal Loan</p>
+              <div class="icon">
+                <img src="./assets/right arrow.png" alt="" />
               </div>
-              <div class="arrow flex px-3 pb-2">
-                <p class="text-button text-2xl md:text-base">Read More</p>
+            </div>
+          </div>
+          <div class="img1">
+            <img src="./assets/Image (2).png" alt="" />
+            <div class="sub flex justify-between items-center mt-5">
+              <p class="text-2xl text-text w-36">IPDC Deposit schemes</p>
+              <div class="icon">
+                <img src="./assets/right arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="img1">
+            <img src="./assets/Image (3).png" alt="" />
+            <div class="sub flex justify-between items-center mt-5">
+              <p class="text-2xl text-text w-36">IPDC Auto Loan</p>
+              <div class="icon">
                 <img src="./assets/right arrow.png" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- end of content 4 -->
-
-      <!-- content 5 -->
-      <div class="wrapper bg-secondary">
-        <div class="box-wrapper p-20">
-          <div class="header flex flex-col justify-center items-center">
-            <div class="title">
-              <h1 class="text-4xl md:text-2xl font-bold">Our Services</h1>
-            </div>
-            <div class="sub-title">
-              <p class="text-2xl text-center md:text-base text-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore quibusdam obcaecati debitis impedit, incidunt
-                cupiditate.
-              </p>
-            </div>
-          </div>
-          <div
-            class="body grid grid-cols-2 gap-5 mt-10 md:grid md:grid-cols-4 justify-center"
-          >
-            <div class="img1">
-              <img src="./assets/Image.png" alt="" />
-              <div class="sub flex justify-between items-center mt-5">
-                <p class="text-2xl text-text w-36">IPDC Deposit schemes</p>
-                <div class="icon">
-                  <img src="./assets/right arrow.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="img1">
-              <img src="./assets/Image (1).png" alt="" />
-              <div class="sub flex justify-between items-center mt-5">
-                <p class="text-2xl text-text w-40">IPDC Personal Loan</p>
-                <div class="icon">
-                  <img src="./assets/right arrow.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="img1">
-              <img src="./assets/Image (2).png" alt="" />
-              <div class="sub flex justify-between items-center mt-5">
-                <p class="text-2xl text-text w-36">IPDC Deposit schemes</p>
-                <div class="icon">
-                  <img src="./assets/right arrow.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="img1">
-              <img src="./assets/Image (3).png" alt="" />
-              <div class="sub flex justify-between items-center mt-5">
-                <p class="text-2xl text-text w-36">IPDC Auto Loan</p>
-                <div class="icon">
-                  <img src="./assets/right arrow.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end of content 5 -->
-
-      <!-- content 6 -->
-      <div class="wrapper mt-5 p-5">
-        <div class="box-wrapper pt-10">
-          <div class="header flex flex-col justify-center items-center">
-            <h1 class="text-4xl mb-5 font-bold">
-              Our best results for the year
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              tempore id commodi, animi nisi odit sed provident dicta illo
-              fugiat!
-            </p>
-          </div>
-          <div class="body mt-10 flex justify-around items-center">
-            <div
-              class="item-body flex flex-wrap gap-10 justify-center md:grid md:grid-cols-4 md:gap-10"
-            >
-              <div class="item-1">
-                <p class="text-xl text-button font-bold">
-                  <span class="text-5xl">56.6</span> bn
-                </p>
-                <p>LOAN PORTOFOLIO</p>
-              </div>
-              <div class="item-1">
-                <p class="text-5xl font-bold">0.95%</p>
-                <p>LOAN PORTOFOLIO</p>
-              </div>
-              <div class="item-1">
-                <p class="text-5xl font-bold">0.95%</p>
-                <p>LOAN PORTOFOLIO</p>
-              </div>
-              <div class="item-1">
-                <p class="text-5xl font-bold">0.95%</p>
-                <p>LOAN PORTOFOLIO</p>
-              </div>
-              <div class="item-1">
-                <p class="text-5xl font-bold">0.95%</p>
-                <p>LOAN PORTOFOLIO</p>
-              </div>
-              <div class="item-1">
-                <p class="text-5xl font-bold">0.95%</p>
-                <p>LOAN PORTOFOLIO</p>
-              </div>
-              <div class="item-1">
-                <p class="text-5xl font-bold">0.95%</p>
-                <p>LOAN PORTOFOLIO</p>
-              </div>
-              <div class="item-1">
-                <p class="text-5xl font-bold">0.95%</p>
-                <p>LOAN PORTOFOLIO</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end of content 6 -->
-
-      <!-- content 7 -->
-      <div class="wrapper mt-10 bg-secondary p-5">
-        <div class="box-wrapper p-10 flex flex-col justify-center items-center">
-          <div class="header flex flex-col justify-center items-center">
-            <h1 class="text-4xl mb-5">Newsletter</h1>
-            <p class="">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
-              molestias temporibus deserunt quam officia ex?
-            </p>
-          </div>
-          <div class="input">
-            <form action="">
-              <input
-                type="text"
-                class="bg-white py-2 border-2 border-slate-300 rounded-lg mt-10 me-5"
-                placeholder="Your Email"
-              />
-              <button class="bg-button text-white px-5 py-2 rounded-lg">
-                SUBSCRIBE
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- end of content 7 -->
-      <footer class="flex justify-center">
-        <div class="container p-10 flex flex-wrap justify-between">
-          <div class="left-footer flex justify-around gap-5">
-            <div class="footer-1 w-[180px]">
-              <p class="text-xl mb-5">About the company</p>
-              <p class="text-base text-slate-800 mb-5">
-                Learn To Love Growth And Change And You Will Be A Success.
-                Microsoft Patch
-              </p>
-              <div class="icon-footer flex gap-5">
-                <img src="./assets/facebook.png" alt="facebook" />
-                <img src="./assets/youtube.png" alt="youtube" />
-                <img src="./assets/linkedin.png" alt="linkedin" />
-                <img src="./assets/instagram.png" alt="instagram" />
-              </div>
-            </div>
-            <div class="footer-2">
-              <p>Products</p>
-              <p>CSR Activities</p>
-              <p>Green Banking</p>
-              <p>News</p>
-              <p>Ongoing Campgain</p>
-              <p>Updates</p>
-            </div>
-            <div class="footer-3">
-              <p>Get Started</p>
-              <p>Career</p>
-              <p>Contact Us</p>
-              <p>Government Securities</p>
-              <p>Examples</p>
-              <p>NIS</p>
-            </div>
-            <div class="footer-4">
-              <p>About</p>
-              <p>IPDC at a Glance</p>
-              <p>Mission, VIsion & Values</p>
-              <p>Corporate Governanace</p>
-              <p>Shareholders</p>
-              <p>Investor Relations</p>
-            </div>
-          </div>
-          <div class="right-footer">
-            <div class="footer-1 flex gap-4">
-              <img src="./assets/call.png" alt="call" />
-              <p>16519</p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
+    <!-- end of content 5 -->
 
-    <script>
-      AOS.init();
-    </script>
-    <script src="respons.js"></script>
-  </body>
+    <!-- content 6 -->
+    <div class="wrapper mt-5 p-5">
+      <div class="box-wrapper pt-10">
+        <div class="header flex flex-col justify-center items-center">
+          <h1 class="text-4xl mb-5 font-bold">
+            Our best results for the year
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            tempore id commodi, animi nisi odit sed provident dicta illo
+            fugiat!
+          </p>
+        </div>
+        <div class="body mt-10 flex justify-around items-center">
+          <div class="item-body flex flex-wrap gap-10 justify-center md:grid md:grid-cols-4 md:gap-10">
+            <div class="item-1">
+              <p class="text-xl text-button font-bold">
+                <span class="text-5xl">56.6</span> bn
+              </p>
+              <p>LOAN PORTOFOLIO</p>
+            </div>
+            <div class="item-1">
+              <p class="text-5xl font-bold">0.95%</p>
+              <p>LOAN PORTOFOLIO</p>
+            </div>
+            <div class="item-1">
+              <p class="text-5xl font-bold">0.95%</p>
+              <p>LOAN PORTOFOLIO</p>
+            </div>
+            <div class="item-1">
+              <p class="text-5xl font-bold">0.95%</p>
+              <p>LOAN PORTOFOLIO</p>
+            </div>
+            <div class="item-1">
+              <p class="text-5xl font-bold">0.95%</p>
+              <p>LOAN PORTOFOLIO</p>
+            </div>
+            <div class="item-1">
+              <p class="text-5xl font-bold">0.95%</p>
+              <p>LOAN PORTOFOLIO</p>
+            </div>
+            <div class="item-1">
+              <p class="text-5xl font-bold">0.95%</p>
+              <p>LOAN PORTOFOLIO</p>
+            </div>
+            <div class="item-1">
+              <p class="text-5xl font-bold">0.95%</p>
+              <p>LOAN PORTOFOLIO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of content 6 -->
+
+    <!-- content 7 -->
+    <div class="wrapper mt-10 bg-secondary p-5">
+      <div class="box-wrapper p-10 flex flex-col justify-center items-center">
+        <div class="header flex flex-col justify-center items-center">
+          <h1 class="text-4xl mb-5">Newsletter</h1>
+          <p class="">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+            molestias temporibus deserunt quam officia ex?
+          </p>
+        </div>
+        <div class="input">
+          <form action="">
+            <input type="text" class="bg-white py-2 border-2 border-slate-300 rounded-lg mt-10 me-5"
+              placeholder="Your Email" />
+            <button class="bg-button text-white px-5 py-2 rounded-lg">
+              SUBSCRIBE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end of content 7 -->
+    <footer class="flex justify-center">
+      <div class="container p-10 flex flex-wrap justify-between">
+        <div class="left-footer flex justify-around gap-5">
+          <div class="footer-1 w-[180px]">
+            <p class="text-xl mb-5">About the company</p>
+            <p class="text-base text-slate-800 mb-5">
+              Learn To Love Growth And Change And You Will Be A Success.
+              Microsoft Patch
+            </p>
+            <div class="icon-footer flex gap-5">
+              <img src="./assets/facebook.png" alt="facebook" />
+              <img src="./assets/youtube.png" alt="youtube" />
+              <img src="./assets/linkedin.png" alt="linkedin" />
+              <img src="./assets/instagram.png" alt="instagram" />
+            </div>
+          </div>
+          <div class="footer-2">
+            <p>Products</p>
+            <p>CSR Activities</p>
+            <p>Green Banking</p>
+            <p>News</p>
+            <p>Ongoing Campgain</p>
+            <p>Updates</p>
+          </div>
+          <div class="footer-3">
+            <p>Get Started</p>
+            <p>Career</p>
+            <p>Contact Us</p>
+            <p>Government Securities</p>
+            <p>Examples</p>
+            <p>NIS</p>
+          </div>
+          <div class="footer-4">
+            <p>About</p>
+            <p>IPDC at a Glance</p>
+            <p>Mission, VIsion & Values</p>
+            <p>Corporate Governanace</p>
+            <p>Shareholders</p>
+            <p>Investor Relations</p>
+          </div>
+        </div>
+        <div class="right-footer">
+          <div class="footer-1 flex gap-4">
+            <img src="./assets/call.png" alt="call" />
+            <p>16519</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+  <script src="respons.js"></script>
+</body>
+
 </html>
